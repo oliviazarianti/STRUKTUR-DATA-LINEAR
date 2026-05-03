@@ -1,0 +1,13 @@
+from collections import deque
+
+antrian = deque()
+
+antrian.append("Mahasiswa 1")
+antrian.append("Mahasiswa 2")
+antrian.append("Mahasiswa 3")
+
+print("Antrian awal:", list(antrian))
+
+antrian.popleft()
+
+print("Setelah dequeue:", list(antrian))
