@@ -1,0 +1,14 @@
+def balik_kata(kata):
+    stack = []
+    for balik in kata:
+        stack.append(balik)
+
+    hasil = ""
+    while stack:
+        hasil += stack.pop()
+ 
+    return hasil
+
+kata = "python"
+print ("Kata asli:", kata)
+print("Kata terbalik:", balik_kata(kata))
